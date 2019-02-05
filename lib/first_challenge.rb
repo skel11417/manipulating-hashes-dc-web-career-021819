@@ -17,7 +17,7 @@ def first_challenge
   #your code here
 
   flavors = contacts["Freddy Mercury"][:favorite_icecream_flavors]
-  puts flavors.is_a? Array
+  puts flavors.delete_if {|flavor| flavor == "strawberry"}
   
   contacts["Freddy Mercury"]
   [:favorite_icecream_flavors].each do |x|
