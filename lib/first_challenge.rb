@@ -17,7 +17,7 @@ def first_challenge
   #your code here
 
   flavors = contacts["Freddy Mercury"][:favorite_icecream_flavors]
-  puts flavors.is_a?
+  puts flavors.is_a? Array
   
   contacts["Freddy Mercury"]
   [:favorite_icecream_flavors].each do |x|
