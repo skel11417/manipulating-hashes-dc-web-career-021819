@@ -15,9 +15,9 @@ def first_challenge
 
   #your code here
 
-  flavors = contacts["Freddy Mercury"][:favorite_icecream_flavors]
-  flavors.delete_if {|flavor| flavor == "strawberry"}
-  puts flavors
+  # flavors = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+  # flavors.delete_if {|flavor| flavor == "strawberry"}
+  # puts flavors
   
   contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if {|flavor| flavor == "strawberry"}  
   puts contacts
