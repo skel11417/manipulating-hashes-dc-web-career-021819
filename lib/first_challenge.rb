@@ -1,3 +1,4 @@
+  require 'pry'
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -15,8 +16,20 @@ def first_challenge
 
   #your code here
 
+  flavors = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+  puts flavors.is_a?
+  
+  contacts["Freddy Mercury"]
+  [:favorite_icecream_flavors].each do |x|
 
+  end
+
+  contacts["Freddy Mercury"]
+  [:favorite_icecream_flavors].delete_if {|flavor| flavor == "strawberry"}  
   #remember to return your newly altered contacts hash!
   contacts
+
+
 end
 
+first_challenge
