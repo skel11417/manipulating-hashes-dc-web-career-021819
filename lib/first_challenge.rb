@@ -18,6 +18,7 @@ def first_challenge
 
   flavors = contacts["Freddy Mercury"][:favorite_icecream_flavors]
   flavors.delete_if {|flavor| flavor == "strawberry"}
+  puts flavors
   
   contacts["Freddy Mercury"]
   [:favorite_icecream_flavors].each do |x|
